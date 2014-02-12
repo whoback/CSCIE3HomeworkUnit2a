@@ -32,9 +32,9 @@ putAnXBtn.onclick = function(){
          *   Do the same thing to generate a number between 0 and the height: this is your y position.
          *   */
 
-        var yPosition = 0; // should generate a value between 0 and the height
-        var xPosition = 0;  //should generate a value between 0 and the width
-
+        var yPosition = Math.floor((Math.random()*height)); // should generate a value between 0 and the height
+        var xPosition = Math.floor((Math.random()*width));  //should generate a value between 0 and the width
+        
  	//now we'll get the HTML element where the X goes, fill in the X and set the position of the element.
  	var theXElement = document.getElementById("theX");
         theXElement.innerHTML="X";
