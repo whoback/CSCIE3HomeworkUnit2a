@@ -17,7 +17,7 @@
   var splitName = document.getElementById("splitName");
 splitName.onclick = function(){
 
-               var fullname = document.getElementById("fullName");
+               var fullname = document.getElementById("fullName").value.split(' ');
 
                /*
                 *  We've gotten the fullname from the HTML form field.
@@ -28,8 +28,8 @@ splitName.onclick = function(){
                 *
                 **/
 
-               var firstname = 'Placeholder first name';
-               var lastname = 'Placeholder last name';
+               var firstname = fullname.slice(0,1).toString();
+               var lastname = fullname.slice(1,2).toString();
 
 
                document.getElementById("firstname").innerHTML = firstname;
