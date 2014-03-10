@@ -23,8 +23,9 @@
  *
  **/
 function makeBlue(original, output){
-      // YOUR CODE GOES HERE
-}
+     original = (255,255,255,1)
+     output = (0,0,255,1)
+ }
 
 /*
  * makeReverse - Reads data from an image bitmap array and writes new image data to another array object
@@ -73,4 +74,3 @@ function makeTransparent(original,output){
 function loadComposite(original, secondOne, output){
        // YOUR CODE GOES HERE
     }
-}
